@@ -39,4 +39,98 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+// console.log('project wired!')
+
+//nav//
+
+const navLinks = document.querySelectorAll('a');
+navLinks[0].textContent = "Services";
+navLinks[1].textContent = "Product";
+navLinks[2].textContent = "Vision";
+navLinks[3].textContent = "Features";
+navLinks[4].textContent = "About";
+navLinks[5].textContent = "Contact";
+
+navLinks[0].classList.add('italic');
+navLinks[1].classList.add('italic');
+navLinks[2].classList.add('italic');
+navLinks[3].classList.add('italic');
+navLinks[4].classList.add('italic');
+navLinks[5].classList.add('italic');
+
+
+
+//header logo img//
+const headerImg = document.querySelector('#logo-img');
+headerImg.src = "http://localhost:9000/img/logo.png";
+
+//h1//
+const siteTitle = document.querySelector('h1');
+siteTitle.textContent = "DOM is Awesome";
+
+//button// 
+const buttonElem = document.querySelector('button');
+buttonElem.textContent = "Get Started";
+
+//cta img//
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = "http://localhost:9000/img/cta.png";
+
+//top content section//
+
+//h4//
+const topContent = document.querySelector('.top-content');
+const headerTop = topContent.querySelectorAll('h4');
+
+headerTop[0].textContent = siteContent['main-content']['features-h4']
+headerTop[1].textContent = siteContent['main-content']['about-h4']
+
+//p//
+const pTop = topContent.querySelectorAll('p');
+pTop[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+pTop[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+
+
+//bottom content section//
+
+//h4//
+const botContent = document.querySelector('.bottom-content');
+const headerBot = botContent.querySelectorAll('h4');
+
+headerBot[0].textContent = siteContent['main-content']['services-h4'];
+headerBot[1].textContent = siteContent['main-content']['product-h4'];
+headerBot[2].textContent = siteContent['main-content']['vision-h4'];
+
+//p//
+
+const pBot = botContent.querySelectorAll('p');
+pBot[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+pBot[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+pBot[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+
+
+//middle img//
+const middleImg = document.querySelector('#middle-img');
+middleImg.src = 'http://localhost:9000/img/accent.png';
+
+
+//contact//
+
+const contact = document.querySelector('.contact');
+const contactHeader = contact.querySelectorAll('h4');
+contactHeader[0].textContent = "contact";
+
+contact.children[1].textContent = siteContent.contact['address'];
+contact.children[2].textContent = siteContent.contact['phone'];
+contact.children[3].textContent = siteContent.contact['email'];
+
+//copyright//
+
+const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent.footer.copyright;
+
+footerLink.classList.add('bold');
